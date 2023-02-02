@@ -99,8 +99,10 @@ void DMXRunAction::Book()
   G4AnalysisManager* man = G4AnalysisManager::Instance();
   man->SetDefaultFileType("root");
   
-  // Open an output file
+  // Prepare to open an output file
+  // Open the output file
   man->OpenFile(savehistFile);
+  man->SetNtupleMerging(true);
   man->SetFirstHistoId(1);
   man->SetFirstNtupleId(1);
 
@@ -161,6 +163,7 @@ void DMXRunAction::Book()
 		300 ,-30.,30.,300,-30.,30.);
   man->CreateH2("hh2","1st event PMT Hit Pattern", 
 		300 ,-30.,30.,300,-30.,30.);
+
 
   return;
 
