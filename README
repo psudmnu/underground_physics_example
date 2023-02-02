@@ -1,3 +1,22 @@
+------------------------------ README File ---------------------------------
+This repository is a version of the example/tutorial included in the default
+Geant4 distribution, called underground_physics.  It started as a full copy of
+the example found in Geant4-11.0.3. The objective to create this repository is 
+two-fold:
+
+1) Make an accessible copy of the example for students learning to use Geant4,
+easy to browse and read online.
+
+2) Fix issues found in the example included in the Geant4 distribution, so that
+it is ready to run "off-the-shelf" by any student.
+
+It could also be used as a testing ground for implementing changes in geometry,
+physics list, and output.  However, any changes that are not essential to 
+running should be done in new branches, not in the master branch.
+
+The rest of the README below is the original README for this example.
+
+
 ------------------------------Advanced Example---------------------------------					README FILE
 
 Note: Due to the importation of data files during the initialisation stage of
